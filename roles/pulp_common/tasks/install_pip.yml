@@ -300,6 +300,9 @@
       when: item.value.source_dir is defined
       environment:
         SETUPTOOLS_USE_DISTUTILS: stdlib
+        COMPOSE_PROFILE: standalone
+        DEV_SOURCE_PATH: 'pulpcore:pulp_ansible:pulp_container:galaxy_ng:galaxy-importer'
+        LOCK_REQUIREMENTS: 0
       notify:
         - Collect static content
         - Restart all Pulp services
