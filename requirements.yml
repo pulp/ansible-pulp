@@ -7,3 +7,4 @@ collections:
   - community.crypto
   - community.general
   - community.postgresql
+  - mdellweg.filters
